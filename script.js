@@ -12,7 +12,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const storage = firebase.storage();
-const messaging = firebase.messaging();
+// const messaging = firebase.messaging();
 
 // Global Variables
 let currentUserPin = null;
@@ -635,4 +635,5 @@ document.querySelectorAll('.modal-card input').forEach(input => {
     input.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') verifyPin();
     });
+
 });
